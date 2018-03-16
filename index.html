@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validasi Website</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+</head>
+<style type="text/css">
+	div
+	{
+	width:500px;
+    margin: 250px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    background: rgba(194, 194, 163,0.2);
+	}
+	body
+	{
+		background: url("assets/images/login.jpg") center ;
+		background-size: cover;
+	}
+</style>
+<body>
+	<div>
+		<label>Silahkan Login Terlebih Dahulu</label>
+		<br>
+		<button type="button" class="btn btn-primary btn-lg" onclick="myTekan()">Login</button>
+	</div>
+
+<script type="text/javascript">
+
+            function myTekan()
+            {
+                var input = prompt("Masukan nama anda :");
+                if (input == "achmad fadli aditama"|| input == "ACHMAD FADLI ADITAMA") 
+                {
+                	alert("Selamat Datang di Website ku :)");
+                	window.location = "web.html";
+                }
+                else
+                {
+                	alert("Maaf, nama yang di input SALAH!");
+                	window.location = "error.html";
+                }
+            }
+        </script>
+</body>
+</html>
